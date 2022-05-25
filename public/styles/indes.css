@@ -1,44 +1,49 @@
-.name-intro-container,.aboutme-mywork-container{
-    height: 100vh;
-    z-index: 1;
-    
-}
-img{
-    position: absolute;
-    width: 50vw;
-    height: 50vh;
-    top: 25%;
-    left: 25%
-    /* -ms-transform:translateY(-50%);
-    transform: -50%; */
-}
-.text-row{
+#home-img-container{
+    /* position: absolute; */
+    height: 98vh;
+    width: 99vw;
+    background-color: black;
+    /* display: flex;
+    justify-content: center; */
+    background-image: url('../images/RDJ.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
     color: white;
 }
+.name-intro-container{
+    /* width: 50vw; */
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.aboutme-mywork-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
 @media screen and (max-width:500px){
-    /* .name-intro-container{
+    .name-intro-container{
         width: 100vw;
         height: fit-content;
     }
     .text-row{
         display: inline;
-    } */
+    }
 }
 .name-intro{
+    /* margin: 20rem; */
+    /* color: white; */
     font-size: xx-large;
+    /* font-family: 'Pacifico', cursive; */
     font-family: 'Lobster', cursive;
 }
 @media screen and (min-width:500px) {
     .text-row{
         display: flex;
-        flex-direction: row; 
-        color: white;
-    }
-    .name-intro-container,.aboutme-mywork-container{
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        /* justify-content: space-evenly; */
     }
 }
 
