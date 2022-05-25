@@ -1,49 +1,28 @@
 #home-img-container{
-    /* position: absolute; */
-    height: 98vh;
-    width: 99vw;
+    height: 100vh;
+    width: 100vw;
     background-color: black;
-    /* display: flex;
-    justify-content: center; */
     background-image: url('../images/RDJ.jpg');
     background-repeat:no-repeat;
     background-position: center;
     color: white;
 }
-.name-intro-container{
-    /* width: 50vw; */
-    height: 97vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.aboutme-mywork-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-}
-@media screen and (max-width:500px){
-    .name-intro-container{
-        width: 100vw;
-        height: fit-content;
-    }
-    .text-row{
-        display: inline;
-    }
-}
 .name-intro{
-    /* margin: 20rem; */
-    /* color: white; */
     font-size: xx-large;
-    /* font-family: 'Pacifico', cursive; */
     font-family: 'Lobster', cursive;
 }
 @media screen and (min-width:500px) {
     .text-row{
         display: flex;
         flex-direction: row;
-        /* justify-content: space-evenly; */
+    }
+    .name-intro-container,.aboutme-mywork-container{
+        height: 100vh;
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
     }
 }
 
