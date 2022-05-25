@@ -16,6 +16,12 @@
         display: flex;
         flex-direction: row;
     }
+    .name-intro-container{
+        padding: 100px;
+    }
+    .aboutme-mywork-container{
+        padding-left: 150px;
+    }
     .name-intro-container,.aboutme-mywork-container{
         height: 100vh;
         width: 50vw;
