@@ -1,34 +1,121 @@
-#home-img-container{
-    height: 100vh;
-    width: 100vw;
+#home-img-container {
+    /* height: 100vh;
+    width: 100vw; */
     background-color: black;
     background-image: url('../images/RDJ.jpg');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     color: white;
 }
-.name-intro{
+
+.top-navbar {
+    margin-top: 5px;
+    width: 100vw;
+    position: fixed;
+    color: white;
+    align-items: center;
+}
+
+.navbar-heading {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar-childrens {
+    float: right;
+}
+
+.navbar-childrens>.nav-item {
+    padding: 10px;
+}
+
+.name-intro {
     font-size: xx-large;
     font-family: 'Lobster', cursive;
 }
+
+.social-network-ids>.accounts {
+    width: 100%;
+
+}
+
+.social-network-ids>.accounts>a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-network-ids>.accounts>a>i {
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
 @media screen and (min-width:500px) {
-    .text-row{
+    .text-row {
         display: flex;
         flex-direction: row;
     }
-    .name-intro-container{
+
+    .name-intro-container {
         padding: 100px;
     }
-    .aboutme-mywork-container{
+
+    .aboutme-mywork-container {
         padding-left: 150px;
     }
-    .name-intro-container,.aboutme-mywork-container{
+
+    .name-intro-container,
+    .aboutme-mywork-container,
+    .skill-intro,
+    .work-experience {
         height: 100vh;
         width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
+
+    }
+
+    .about-me {
+        height: 100vh;
+        display: flex;
+        background-color: black;
+        color: white;
+    }
+
+    .skill-intro>h2 {
+        padding-left: 100px;
+        padding-right: 100px;
+        font-family: 'Lobster', cursive;
+
+    }
+
+    .skill-intro>h3 {
+        padding-left: 100px;
+        padding-bottom: 10px;
+        /* font-family: 'Lobster', cursive; */
     }
 }
 
+.about-me {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.work-experience>.heading,
+.work-experience>.projects-heading {
+    /* width: fit-content; */
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.work-experience>.heading>div>h5,
+.work-experience>.projects-heading>div>h5 {
+    margin: 0;
+}
+
+.work-experience {
+    display: flex;
+    flex-direction: row;
+}
