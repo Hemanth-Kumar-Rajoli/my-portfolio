@@ -1,0 +1,19 @@
+<div class="skills-card">
+    <div class="card-image">
+        <div class="icon">
+            <% if(skill.toLowerCase()=="html" ){ %>
+                <i class="fa-brands fa-html5"></i>
+            <% }else if(skill.toLowerCase()=="java"){ %> 
+                <i class="fa-brands fa-java"></i>
+            <% }else if(skill.toLowerCase()=="python"){ %> 
+                <i class="fa-brands fa-python"></i>
+            <% }else if(skill.toLowerCase()=="js"){ %> 
+                <i class="fa-brands fa-js"></i>
+            <% } %> 
+        </div>
+    </div>
+    <div class="card-title">
+        <h2><%= skill[0].toUpperCase()+skill.toLowerCase().slice(1) %></h2>
+    </div>
+    <div class="card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia libero aliquam at cum dicta voluptatem. Quam sequi similique voluptas molestiae?</div>
+</div>
