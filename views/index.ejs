@@ -18,7 +18,7 @@
 <body>
     <div>
         <section class="top-navbar">
-            <div class="navbar-heading"><i class="fa-solid fa-code" style="font-size: 1.6rem; color: red;"></i>&nbsp;<h3
+            <div class="navbar-heading"><i class="fa-solid fa-code" style="font-size: 1.6rem; color: red; "></i>&nbsp;<h3
                     style="display: inline;">RAJOLI HEMANTH KUMAR</h3>
             </div>
             <div class="navbar-childrens">
@@ -127,14 +127,14 @@
                 <div class="forward-backward-buttons">
                     <h1 class="skills-header">My extensive skills</h1>
                     <div class="skills-button-group">
-                        <button id="less-than">
+                        <button id="backward">
                             <i class="fa-solid fa-circle-chevron-left" style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
                         </button>
-                        <button id="grater-than">
+                        <button id="forward">
                             <i class="fa-solid fa-circle-chevron-right" style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
                         </button>
                     </div>
-                    <div class="skills-card-container">
+                    <div id="skills-card-container" data-total-skills=<%= skills.length %> >
                         <% for(let i=0;i<skills.length;i++) {%>
                             <%- include('./utils/skillsCard',{skill:skills[i]}) %>
                         <% } %>
@@ -142,7 +142,45 @@
                 </div>
             </div>
         </section>
+        <hr style="margin:0 ;" />
+        <section class="my-projects-section">
+            <div class="my-projects-container">
+                <div class="my-projects-tag">
+                    <h3><span style="color: red;">/&nbsp;</span>MY projects</h3>
+                </div>
+                <div class="side-heading">
+                    <h2>My lovable projects</h2>
+                </div>
+                <div class="list-of-projects-container">
+                    <div class="project">
+                        <div class="project-preview-image">
+                            <img src="../images/chaichat.png" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>CHAI CHAT</h2>
+                            <div class="line-bar"></div>
+                        </div>
+                        <div class="project-overview">
+                            <stron>
+                                <p style="color: black; font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis non cum distinctio ducimus earum! Eos expedita, ex aliquid velit delectus esse impedit? Numquam, iste. Veniam culpa tenetur odit repudiandae mollitia quo impedit, magnam dicta sequi deleniti soluta similique esse excepturi nam accusamus magni rerum commodi doloribus quis et itaque eos aliquam at atque. Temporibus minus incidunt deleniti ad sapiente!</p>
+                            </stron>
+                        </div>
+                        <div class="project-skills-used">
+                            <h3>Skills used</h3>
+                            <div class="line-bar"></div>
+                            <div>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-js"></i>
+                                <i class="fa-brands fa-node-js"></i>
+                                <i class="fa-brands fa-css3"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
-
+<script src="../scripts/index.js"></script>
 </html>
