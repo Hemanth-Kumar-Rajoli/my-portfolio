@@ -19,7 +19,7 @@
 .line-bar{
     width: 50px;
     height: 3px;
-    background-color: white;
+    background-color: #5d6c83;
 }
 
 .navbar-heading,
@@ -115,9 +115,17 @@
     .my-skills-container {
         padding-top: 100px;
     }
+    .my-experience-container{
+        padding-left: 100px;
+        padding-top: 20px;
+    }
+    .contact-me-section{
+        padding: 100px;
+
+    }
 }
 
-.about-me {
+.about-me,.my-experience-section {
     height: 100vh;
     background-color: black;
     color: white;
@@ -159,7 +167,7 @@
 }
 
 .my-projects-section {
-    height: 100vh;
+    height: fit-content;
     background-color: black;
     color: white;
 }
@@ -225,13 +233,19 @@
 
 .list-of-projects-container>.project {
     width: calc(100vw-200px);
-    height: 70vh;
-    background-color: rgb(165, 165, 165);
+    height: calc(fit-content);
+
+    padding-bottom: 250px;
+    background-color: rgba(45, 52, 63, 0.4);
     position: relative;
     overflow: hidden;
     border-radius: 0px 30px 30px;
 }
-
+@media screen and (min-width:770px) {
+    .list-of-projects-container>.project {
+        padding-bottom: 150px;
+    }
+}
 .project-preview-image>img {
     width: 150%;
     margin-left: 50%;
@@ -255,5 +269,34 @@
 .project-overview{
     margin-left: 20px;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
+}
+.project-skills-used{
+    position: relative;
+    margin-top: 40px;
+    /* color: rgb(50, 50, 58); */
+}
+.project-link,.project-team-members{
+    margin-left: 20px;
+}
+.horizontal-line{
+    width: 95%;
+    height: 2px;
+    margin: 2px auto;
+    background-color: #5d6c83;
+}
+.project-skills-used{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.my-experience-section{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.contact-me-section{
+    /* background-color: black; */
+    color: white;
 }

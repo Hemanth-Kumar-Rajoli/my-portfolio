@@ -18,8 +18,8 @@
 <body>
     <div>
         <section class="top-navbar">
-            <div class="navbar-heading"><i class="fa-solid fa-code" style="font-size: 1.6rem; color: red; "></i>&nbsp;<h3
-                    style="display: inline;">RAJOLI HEMANTH KUMAR</h3>
+            <div class="navbar-heading"><i class="fa-solid fa-code" style="font-size: 1.6rem; color: red; "></i>&nbsp;
+                <h3 style="display: inline;">RAJOLI HEMANTH KUMAR</h3>
             </div>
             <div class="navbar-childrens">
                 <span class="nav-item">Home</span>
@@ -45,7 +45,8 @@
                             ex, ad est vero reiciendis dolore aut numquam aperiam incidunt cum quisquam soluta, qui
                             atque impedit. Asperiores!</p>
                         <br />
-                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
+                                class="fa-solid fa-arrow-right"></i></a>
                         <hr />
                     </div>
 
@@ -55,7 +56,8 @@
                             porro sequi natus quas nesciunt nostrum neque, fuga esse distinctio temporibus veritatis
                             corporis cupiditate ad commodi optio aliquid!</P>
                         <br />
-                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
+                                class="fa-solid fa-arrow-right"></i></a>
                         <hr />
                     </div>
                     <div class="social-network-ids">
@@ -128,23 +130,25 @@
                     <h1 class="skills-header">My extensive skills</h1>
                     <div class="skills-button-group">
                         <button id="backward">
-                            <i class="fa-solid fa-circle-chevron-left" style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
+                            <i class="fa-solid fa-circle-chevron-left"
+                                style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
                         </button>
                         <button id="forward">
-                            <i class="fa-solid fa-circle-chevron-right" style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
+                            <i class="fa-solid fa-circle-chevron-right"
+                                style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
                         </button>
                     </div>
-                    <div id="skills-card-container" data-total-skills=<%= skills.length %> >
+                    <div id="skills-card-container" data-total-skills=<%=skills.length %> >
                         <% for(let i=0;i<skills.length;i++) {%>
                             <%- include('./utils/skillsCard',{skill:skills[i]}) %>
-                        <% } %>
+                                <% } %>
                     </div>
                 </div>
             </div>
         </section>
         <hr style="margin:0 ;" />
         <section class="my-projects-section">
-            <div class="my-projects-container">
+            <div class="my-projects-container" style="padding-top: 20px;">
                 <div class="my-projects-tag">
                     <h3><span style="color: red;">/&nbsp;</span>MY projects</h3>
                 </div>
@@ -157,30 +161,166 @@
                             <img src="../images/chaichat.png" alt="">
                         </div>
                         <div class="project-title">
-                            <h2>CHAI CHAT</h2>
+                            <h2>CHAI CHAT <a href="https://chai-chat.herokuapp.com" target="_blank"><i
+                                        class="fa-solid fa-up-right-from-square" style="font-size: 1.3rem;"></i></a>
+                            </h2>
                             <div class="line-bar"></div>
                         </div>
                         <div class="project-overview">
-                            <stron>
-                                <p style="color: black; font-weight: 600;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quis non cum distinctio ducimus earum! Eos expedita, ex aliquid velit delectus esse impedit? Numquam, iste. Veniam culpa tenetur odit repudiandae mollitia quo impedit, magnam dicta sequi deleniti soluta similique esse excepturi nam accusamus magni rerum commodi doloribus quis et itaque eos aliquam at atque. Temporibus minus incidunt deleniti ad sapiente!</p>
-                            </stron>
+                            <!-- <stron> -->
+                            <p style="color: #c3cad5; font-weight: 400;">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Atque quis non cum distinctio ducimus earum! Eos expedita, ex aliquid
+                                velit delectus esse impedit? Numquam, iste. Veniam culpa tenetur odit repudiandae
+                                mollitia quo impedit, magnam dicta sequi deleniti soluta similique esse excepturi nam
+                                accusamus magni rerum commodi doloribus quis et itaque eos aliquam at atque. Temporibus
+                                minus incidunt deleniti ad sapiente!</p>
+                            <!-- </stron> -->
+                        </div>
+                        <div class="project-team-members">
+                            <h3>Team members</h3>
+                            <div class="line-bar"></div>
+                            <ul style="margin-top: 3px; color: #c3cad5;">
+                                <li>Hemanth Kumar</li>
+                            </ul>
                         </div>
                         <div class="project-skills-used">
-                            <h3>Skills used</h3>
+                            <div class="horizontal-line" style="margin-bottom: 30px; margin-left: 0px;"></div>
+                            <div class="row">
+                                <h5 class="title-lang col-md-4 col-sm-12"
+                                    style="display: flex; justify-content: center; align-items: center;">Skills used
+                                </h5>
+                                <div class="list-skills col-md-8 row" style="justify-content: center;">
+                                    <h3 style="text-align: center;" class="col-5 col-md-2">HTML&nbsp;<i
+                                            class="fa-brands fa-html5"></i></h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-2">Css&nbsp;<i
+                                            class="fa-brands fa-css3"></i></h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-2">JS&nbsp;<i
+                                            class="fa-brands fa-js"></i></h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">Node.js&nbsp;<i
+                                            class="fa-brands fa-node-js"></i></h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">Mongodb&nbsp;<i
+                                            class="fa-solid fa-database"></i></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" style="margin-top: 10px;">
+                        <div class="project-preview-image">
+                            <img src="../images/smartattendance.png" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Smart Attendance</h2>
                             <div class="line-bar"></div>
-                            <div>
-                                <i class="fa-brands fa-html5"></i>
-                                <i class="fa-brands fa-js"></i>
-                                <i class="fa-brands fa-node-js"></i>
-                                <i class="fa-brands fa-css3"></i>
-
+                        </div>
+                        <div class="project-overview">
+                            <!-- <stron> -->
+                            <p style="color: #c3cad5; font-weight: 400;">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Atque quis non cum distinctio ducimus earum! Eos expedita, ex aliquid
+                                velit delectus esse impedit? Numquam, iste. Veniam culpa tenetur odit repudiandae
+                                mollitia quo impedit, magnam dicta sequi deleniti soluta similique esse excepturi nam
+                                accusamus magni rerum commodi doloribus quis et itaque eos aliquam at atque. Temporibus
+                                minus incidunt deleniti ad sapiente!</p>
+                            <!-- </stron> -->
+                        </div>
+                        <div class="project-team-members">
+                            <h3>Team members</h3>
+                            <div class="line-bar"></div>
+                            <ul style="margin-top: 3px; color: #c3cad5;">
+                                <li>Hemanth Kumar</li>
+                                <li> Abdul Gani Baig</li>
+                                <li>Suhail</li>
+                                <li>Bramatha</li>
+                                <li>Keerthana</li>
+                                <li>Rakshitha</li>
+                            </ul>
+                        </div>
+                        <div class="project-skills-used">
+                            <div class="horizontal-line" style="margin-bottom: 30px; margin-left: 0px;"></div>
+                            <div class="row">
+                                <h5 class="title-lang col-md-4 col-sm-12"
+                                    style="display: flex; justify-content: center; align-items: center;">Skills used
+                                </h5>
+                                <div class="list-skills col-md-8 row" style="justify-content: center;">
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">OpenCV</h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">kivyMD</h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">python&nbsp;<i
+                                            class="fa-brands fa-python"></i></h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-3">SqlLite&nbsp;<i
+                                            class="fa-solid fa-database"></i></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project" style="margin-top: 10px;">
+                        <div class="project-preview-image">
+                            <img src="../images/virtualPen.jpg" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Virtual Pen</h2>
+                            <div class="line-bar"></div>
+                        </div>
+                        <div class="project-overview">
+                            <!-- <stron> -->
+                            <p style="color: #c3cad5; font-weight: 400;">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Atque quis non cum distinctio ducimus earum! Eos expedita, ex aliquid
+                                velit delectus esse impedit? Numquam, iste. Veniam culpa tenetur odit repudiandae
+                                mollitia quo impedit, magnam dicta sequi deleniti soluta similique esse excepturi nam
+                                accusamus magni rerum commodi doloribus quis et itaque eos aliquam at atque. Temporibus
+                                minus incidunt deleniti ad sapiente!</p>
+                            <!-- </stron> -->
+                        </div>
+                        <div class="project-team-members">
+                            <h3>Team members</h3>
+                            <div class="line-bar"></div>
+                            <ul style="margin-top: 3px; color: #c3cad5;">
+                                <li>Hemanth Kumar</li>
+                            </ul>
+                        </div>
+                        <div class="project-skills-used">
+                            <div class="horizontal-line" style="margin-bottom: 30px; margin-left: 0px;"></div>
+                            <div class="row">
+                                <h5 class="title-lang col-md-4 col-sm-12"
+                                    style="display: flex; justify-content: center; align-items: center;">Skills used
+                                </h5>
+                                <div class="list-skills col-md-8 row" style="justify-content: center;">
+                                    <h3 style="text-align: center;" class="col-5 col-md-6">OpenCV</h3>
+                                    <h3 style="text-align: center;" class="col-5 col-md-6">python&nbsp;<i
+                                            class="fa-brands fa-python"></i></h3>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <hr style="margin:0 ;" />
+        </section>
+        <section class="my-experience-section">
+            <div class="my-experience-container">
+                <div class="my-experience-tag">
+                    <h3><span style="color: red;">/&nbsp;</span>MY EXPERIENCE</h3>
+                </div>
+
+                <ul class="comapany-names-container" style="list-style-type: none;">
+                    <li class="company">
+                        <div class="company-name">
+                            <h2 style="display: inline-block ;">YES REAL TECHNOLOGIES pvt.Limted</h2>&nbsp;
+                            <sub style="border: 1px solid greenyellow; border-radius: 5px; padding-left: 2px; padding-right: 2px;">02/2022 - 08/2022</sub>
+                            <sub style="border: 1px solid rgb(0, 251, 255); border-radius: 5px; padding-left: 2px; padding-right: 2px;">intern</sub>
+                        </div>
+                        <div class="my-contract-details" style="float: right;">
+                            <p>-MERN STACK DEVELOPER</p>
+                        </div>
+                        <div class="description">
+                            <br>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, dicta neque autem at repudiandae eligendi ratione deserunt molestias omnis, corporis totam, voluptate delectus cupiditate nostrum veritatis? Minima labore nemo unde?
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
         </section>
     </div>
 </body>
 <script src="../scripts/index.js"></script>
+
 </html>
