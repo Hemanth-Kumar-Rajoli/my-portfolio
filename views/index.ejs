@@ -19,19 +19,19 @@
     <div>
         <section class="top-navbar">
             <div class="navbar-heading"><i class="fa-solid fa-code" style="font-size: 1.6rem; color: red; "></i>&nbsp;
-                <h3 style="display: inline;">RAJOLI HEMANTH KUMAR</h3>
+                <h2 style="display: inline;">RAJOLI HEMANTH KUMAR</h2>
             </div>
             <div class="navbar-childrens">
-                <span class="nav-item">Home</span>
-                <span class="nav-item">About</span>
-                <span class="nav-item">Skills</span>
-                <span class="nav-item">Contact</span>
+                <a href="#home" class="nav-item"><span >Home</span></a>
+                <a href="#about" class="nav-item"><span >About</span></a>
+                <a href="#skills" class="nav-item"><span >Skills</span></a>
+                <a href="#contact" class="nav-item"><span >Contact</span></a>
                 <!-- <span>About</span> -->
             </div>
         </section>
         <section id="home-img-container">
             <!-- <img src="./../images/RDJ.jpg" alt="im Hemanth"> -->
-            <div class="text-row">
+            <div class="text-row" id="home">
                 <div class="name-intro-container">
                     <div class="name-intro">I'm Hemanth, a Full stack developer</div>
                     <p class="name-intro-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
@@ -45,7 +45,7 @@
                             ex, ad est vero reiciendis dolore aut numquam aperiam incidunt cum quisquam soluta, qui
                             atque impedit. Asperiores!</p>
                         <br />
-                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
+                        <a href="#about" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <hr />
                     </div>
@@ -56,7 +56,7 @@
                             porro sequi natus quas nesciunt nostrum neque, fuga esse distinctio temporibus veritatis
                             corporis cupiditate ad commodi optio aliquid!</P>
                         <br />
-                        <a href="#" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
+                        <a href="#work" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
                                 class="fa-solid fa-arrow-right"></i></a>
                         <hr />
                     </div>
@@ -78,7 +78,7 @@
             </div>
         </section>
         <hr style="margin:0 ;" />
-        <section class="about-me-section">
+        <section class="about-me-section" id="about">
             <div class="about-me">
                 <div class="skill-intro">
                     <h3><span style="color: red;">/&nbsp;</span>ABOUT ME</h3>
@@ -121,13 +121,13 @@
             </div>
         </section>
         <hr style="margin:0 ;" />
-        <section class="my-skills-section">
+        <section class="my-skills-section" id="skills">
             <div class="my-skills-container">
                 <div class="my-skills-tag">
                     <h3><span style="color: red;">/&nbsp;</span>MY SKILLS</h3>
                 </div>
                 <div class="forward-backward-buttons">
-                    <h1 class="skills-header">My extensive skills</h1>
+                    <h4 class="skills-header">My extensive skills</h4>
                     <div class="skills-button-group">
                         <button id="backward">
                             <i class="fa-solid fa-circle-chevron-left"
@@ -143,6 +143,16 @@
                             <%- include('./utils/skillsCard',{skill:skills[i]}) %>
                                 <% } %>
                     </div>
+                    <div class="skills-button-group-2">
+                        <button id="backward-2">
+                            <i class="fa-solid fa-circle-chevron-left"
+                                style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
+                        </button>
+                        <button id="forward-2">
+                            <i class="fa-solid fa-circle-chevron-right"
+                                style="font-size: 3rem; color: rgb(153, 153, 247);"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,10 +160,10 @@
         <section class="my-projects-section">
             <div class="my-projects-container" style="padding-top: 20px;">
                 <div class="my-projects-tag">
-                    <h3><span style="color: red;">/&nbsp;</span>MY projects</h3>
+                    <h3><span style="color: red;">/&nbsp;</span>MY PROJECTS</h3>
                 </div>
                 <div class="side-heading">
-                    <h2>My lovable projects</h2>
+                    <h4>My lovable projects</h4>
                 </div>
                 <div class="list-of-projects-container">
                     <div class="project">
@@ -294,7 +304,7 @@
             </div>
             <hr style="margin:0 ;" />
         </section>
-        <section class="my-experience-section">
+        <section class="my-experience-section" id="work" >
             <div class="my-experience-container">
                 <div class="my-experience-tag">
                     <h3><span style="color: red;">/&nbsp;</span>MY EXPERIENCE</h3>
@@ -325,7 +335,7 @@
             </div>
         </section>
         <hr style="margin:0 ;" />
-        <section class="contact-me-section">
+        <section class="contact-me-section" id="contact">
             <div class="contact-me-container row">
                 <div class="main-info col-md-6 col-12">
                     <div class="image-and-name">
@@ -363,7 +373,7 @@
                         </div>
                         <div class="phone col" style="display: flex; flex-direction: column;">
                             <h3 style="text-align: start;">Contact me</h3>
-                            <a href="tel:+918897668913" style="width: 100%; text-align: start; color: white; text-decoration: none;">+91 8897668913 <i class="fa-solid fa-arrow-right-long" ></i></a>
+                            <a href="tel:+917032373313" style="width: 100%; text-align: start; color: white; text-decoration: none;">+91 8897668913 <i class="fa-solid fa-arrow-right-long" ></i></a>
                         </div>  
                    </div>
                 </div>

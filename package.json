@@ -4,8 +4,8 @@
   "description": "its my resume",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "start-dep": "node server.js"
+    "start": "node server.js",
+    "start-dep": "nodemon server.js"
   },
   "author": "Hemanth Kumar Rajoli",
   "license": "ISC",
@@ -14,5 +14,8 @@
     "ejs": "^3.1.8",
     "express": "^4.18.1",
     "nodemon": "^2.0.16"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }
