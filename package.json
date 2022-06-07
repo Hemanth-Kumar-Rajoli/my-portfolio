@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "start-dep": "nodemon server.js"
+    "start:dev": "nodemon server.js"
   },
   "author": "Hemanth Kumar Rajoli",
   "license": "ISC",

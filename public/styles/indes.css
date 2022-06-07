@@ -153,6 +153,9 @@ a.nav-item{
     .skills-button-group-2{
         display: none;
     }
+    .skills-card{
+        display: flex;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -174,10 +177,29 @@ a.nav-item{
         display: none;
     }
     .skills-button-group-2{
-        margin-top: 20px;
+        /* margin-top: 20px; */
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        position: relative;
+        top: -200px;
+        background-color: unset !important;
+    }
+    .skills-button-group-2>button{
+        outline: none;
+        border: none;
+        margin-right: 0 !important;
+    }
+    .skills-button-group-2>button:hover{
+        border: 2px solid #007bff;
+    }
+    .skills-card{
+        display: none;
+        margin-left: 0px !important;
+    }
+    .skills-card-hide{
+        display: flex;
+        
     }
 }
 
@@ -242,7 +264,7 @@ a.nav-item{
     min-width: 300px;
     max-width: 300px;
     margin-left: 10px;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     
@@ -254,6 +276,7 @@ a.nav-item{
     position: relative;
     /* left: 300px; */
     right: 0px;
+    margin-left: 40px;
     transition: right 1s;
 }
 

@@ -1,4 +1,4 @@
-<div class="skills-card">
+<div class="skills-card" data-item-no=<%= itemNo %>>
     <div class="card-image">
         <div class="icon">
             <% if(skill.toLowerCase()=="html" ){ %>
@@ -25,5 +25,5 @@
     <div class="card-title">
         <h2><%= skill[0].toUpperCase()+skill.toLowerCase().slice(1) %></h2>
     </div>
-    <div class="card-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia libero aliquam at cum dicta voluptatem. Quam sequi similique voluptas molestiae?</div>
+    <div class="card-info"><%= description %></div>
 </div>
