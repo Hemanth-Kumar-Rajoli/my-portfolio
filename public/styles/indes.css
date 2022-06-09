@@ -161,6 +161,10 @@ a.nav-item{
 }
 
 @media screen and (max-width:500px) {
+    .padding-left-right{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
     #home-img-container {
         background-position: -100px;
     }
