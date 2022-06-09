@@ -161,6 +161,9 @@ a.nav-item{
 }
 
 @media screen and (max-width:500px) {
+    #home-img-container {
+        background-position: -100px;
+    }
     .text-row {
         padding-top: 50px;
         padding-bottom: 20px;
