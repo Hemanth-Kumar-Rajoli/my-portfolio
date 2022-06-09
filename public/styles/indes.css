@@ -7,9 +7,9 @@ a.nav-item{
     /* height: 100vh;
     width: 100vw; */
     background-color: black;
-    background-image: url('../images/RDJ.jpg');
+    background-image: url('../images/hemanth.png');
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: 25vw; */
     color: white;
 }
 
@@ -72,7 +72,9 @@ a.nav-item{
         display: flex;
         flex-direction: row;
     }
-
+    #home-img-container {
+        background-position: 25vw;
+    }
     .name-intro-container {
         padding: 100px;
     }

@@ -25,6 +25,7 @@
                 <a href="#home" class="nav-item"><span>Home</span></a>
                 <a href="#about" class="nav-item"><span>About</span></a>
                 <a href="#skills" class="nav-item"><span>Skills</span></a>
+                <a href="#projects" class="nav-item"><span>Projects</span></a>
                 <a href="#contact" class="nav-item"><span>Contact</span></a>
                 <!-- <span>About</span> -->
             </div>
@@ -34,16 +35,16 @@
             <div class="text-row" id="home">
                 <div class="name-intro-container">
                     <div class="name-intro">I'm Hemanth, a Full stack developer</div>
-                    <p class="name-intro-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-                        ad
-                        nulla accusamus explicabo consectetur architecto assumenda nobis nostrum minus rerum!</p>
+                    <p class="name-intro-description">Enthusiastic Computer Science geek and strong knowledge of Java
+                        and Python Programming. Constantly looking for new challenges, skill-building and developing a
+                        resourceful network.</p>
                 </div>
                 <div class="aboutme-mywork-container">
                     <div class="about-me-container">
                         <h4><strong>ABOUT ME</strong></h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa distinctio corrupti dolor iure
-                            ex, ad est vero reiciendis dolore aut numquam aperiam incidunt cum quisquam soluta, qui
-                            atque impedit. Asperiores!</p>
+                        <p>Computer science student with 3+ years of coding experience and 2+ years of experience in
+                            full-stack development in Node.js. Currently pursuing my B.Tech in MITS in madanapalle.
+                            Seeking to leverage algorithm skills, coding skills and leadership abilities.</p>
                         <br />
                         <a href="#about" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
                                 class="fa-solid fa-arrow-right"></i></a>
@@ -52,9 +53,8 @@
 
                     <div class="my-work-container">
                         <h4><strong>MY WORK</strong></h4>
-                        <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur alias maiores earum,
-                            porro sequi natus quas nesciunt nostrum neque, fuga esse distinctio temporibus veritatis
-                            corporis cupiditate ad commodi optio aliquid!</P>
+                        <P>Currently working as an Intern in YRT company as a MERN stack developer, To build ERP for
+                            educational institutes to manage their resources on period of six months. </P>
                         <br />
                         <a href="#work" style="color: white;">KNOW MORE&nbsp;&nbsp;<i
                                 class="fa-solid fa-arrow-right"></i></a>
@@ -71,6 +71,8 @@
                                     class="fa-brands fa-github-square"></i></a>
                             <a target="_blank" href="https://www.facebook.com/rajoli.kumar"><i
                                     class="fa-brands fa-facebook-square"></i></a>
+                            <a target="_blank" href="https://wa.me/+918897668913"><i
+                                    class="fa-brands fa-whatsapp-square"></i></a>
                         </div>
 
                     </div>
@@ -84,9 +86,10 @@
                     <h3><span style="color: red;">/&nbsp;</span>ABOUT ME</h3>
                     <h2>I've been wroking with full stack and MERN stack development since 2K20</h2>
                     <div>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia, mollitia totam fugiat illo
-                        magnam earum sint? Cum, officia ducimus voluptate accusamus, laboriosam maxime fugit iste optio
-                        ex tempore deleniti!
+                        Started as a basic programmer in python, then I did some crazy experiments in python's turtle
+                        module. And then slowly started with C and Java and stepped into the crazy field i.e "Data
+                        structures". Did some surfing in data-structure there by entered in to my favorite and crazy
+                        field Alogorithms. Then started learning full stack-development in Node.js.
                     </div>
                 </div>
                 <div class="work-experience">
@@ -99,22 +102,23 @@
                             </div>
                         </div>
                         <div>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia, mollitia totam fugiat
-                            illo magnam earum sint? Cum, officia ducimus voluptate accusamus, laboriosam maxime fugit
-                            iste optio ex tempore deleniti!
+                            with Full stack development on technologies HTML, CSS, JS, Node.JS, Express, EJS, and
+                            mongoose drivers to connect with the MongoDB cluster. For fast development of webpages I
+                            have been started working with React library.
                         </div>
                     </div>
                     <div class="projects-expo">
                         <div class="projects-heading">
                             <h2 style="font-size: 4rem; padding-right: 5px;">4</h2>
                             <div>
-                                <h5>Successfull</h5>
+                                <h5>Successful</h5>
                                 <h5>projects</h5>
                             </div>
                         </div>
-                        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere repudiandae ad fugiat
-                            eaque possimus eius optio recusandae quas nam nesciunt ipsa harum quos mollitia earum ea,
-                            officia tenetur doloremque delectus.</div>
+                        <div>on full-stack and python. And did mini projects like a basic chat room applicatoin using
+                            socket.io, and a To-Do list to organize our daily tasks and games in python using turtle
+                            library. The major projects are chai-chat, smart attendance, virtual-pen, and ERP for
+                            educational institutes is running. </div>
                     </div>
 
                 </div>
@@ -140,31 +144,30 @@
                     </div>
                     <div id="skills-card-container" data-total-skills=<%=skills.length %> >
                         <% for(let i=0;i<skills.length;i++) {%>
-                            <%- include('./utils/skillsCard',{skill:skills[i],description:descriptions[skills[i]],itemNo:i}) %>
+                            <%- include('./utils/skillsCard',{skill:skills[i],description:descriptions[skills[i]],itemNo:i})
+                                %>
                                 <% } %>
                     </div>
                     <div class="skills-button-group-2">
                         <button id="backward-2">
-                            
-                            <i class="fa-solid fa-chevron-left"
-                                style="font-size: 3rem; color: #007bff; "></i>
+
+                            <i class="fa-solid fa-chevron-left" style="font-size: 3rem; color: #007bff; "></i>
                         </button>
                         <button id="forward-2">
-                            <i class="fa-solid fa-chevron-right"
-                                style="font-size: 3rem; color: #007bff"></i>
+                            <i class="fa-solid fa-chevron-right" style="font-size: 3rem; color: #007bff"></i>
                         </button>
                     </div>
                 </div>
             </div>
         </section>
         <hr style="margin:0 ;" />
-        <section class="my-projects-section">
+        <section class="my-projects-section" id="projects">
             <div class="my-projects-container" style="padding-top: 20px;">
                 <div class="my-projects-tag">
                     <h3><span style="color: red;">/&nbsp;</span>MY PROJECTS</h3>
                 </div>
                 <div class="side-heading">
-                    <h4>My lovable projects</h4>
+                    <h4>My exiting projects</h4>
                 </div>
                 <div class="list-of-projects-container">
                     <div class="project">
@@ -353,6 +356,8 @@
                                             class="fa-brands fa-github-square"></i></a>
                                     <a target="_blank" href="https://www.facebook.com/rajoli.kumar"><i
                                             class="fa-brands fa-facebook-square"></i></a>
+                                    <a target="_blank" href="https://wa.me/+918897668913"><i
+                                            class="fa-brands fa-whatsapp-square"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -374,7 +379,7 @@
                         </div>
                         <div class="phone col" style="display: flex; flex-direction: column;">
                             <h3 style="text-align: start;">Contact me</h3>
-                            <a href="tel:+917032373313"
+                            <a href="tel:+918897668913"
                                 style="width: 100%; text-align: start; color: white; text-decoration: none;">+91
                                 8897668913 <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
