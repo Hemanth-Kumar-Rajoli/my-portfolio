@@ -8,9 +8,9 @@ router.route('/').post(async (req,res)=>{
         await userMessages.create(req.body);
         sendEmail({
             message:`Name: ${req.body.name}\nMail: ${req.body.email}\nMessage: ${req.body.message}`,
-            subject:req.body.subject
+            subject:""+req.body.subject
         })
-        console.log("mail sended to :", req.body.email)
+        console.log("mail sended by :", req.body.email)
     }
     catch(err){
         console.log("error occured",err.message)
