@@ -10,6 +10,7 @@ router.route('/').post(async (req,res)=>{
             message:`Name: ${req.body.name}\nMail: ${req.body.email}\nMessage: ${req.body.message}`,
             subject:req.body.subject
         })
+        console.log("mail sended to :", req.body.email)
     }
     catch(err){
         console.log("error occured",err.message)
