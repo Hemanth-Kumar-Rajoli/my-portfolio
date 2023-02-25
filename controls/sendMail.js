@@ -29,7 +29,7 @@ const sendEmail = async(options)=>{
         text:options.message
     }
     sgmail.send(mailOptions).then((res)=>{
-        console.log(res)
+        console.log("sending mail...")
     }).catch(()=>{
         console.log("error while sending message")
     })
