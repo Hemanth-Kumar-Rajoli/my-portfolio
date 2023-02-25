@@ -5,9 +5,10 @@ const router = express.Router()
 router.route('/').get((req, res) => {
     res.render('index', {
         skills:
-            ["JAVA", "PYTHON", "JS", "MYSQL", "REACT", "NODE.JS", "HTML", "CSS"],
+            ["JAVA","SPRING BOOT", "PYTHON", "JS", "MYSQL", "REACT", "NODE.JS", "HTML", "CSS"],
         descriptions: {
             "JAVA": "My all time favorite language java. The first language to teach me OOPS concepts very well. It's my base language to apply algorithms. ",
+            "SPRING BOOT":"Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can 'just run'",
             "PYTHON": "This is my playgroud to code programs. This is the First language to be introduced in the curriculum. I have Designed games like 'servive the snake' and 'space shoot' using python turtle library.",
             "JS": "The  doubts raised on OOPS concept in python language are being clarified in JS. In the process of learning full stack development, it plays one of the key roles in programming the behaviour of webpages.",
             "MYSQL": `DBMS and SQL are interesting subjects in arranging data properly with considering normalization in tables to reduce the redundancy in the tables.`,
